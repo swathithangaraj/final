@@ -1,7 +1,7 @@
 jobs:
   build:
     environment:
-      IMAGE_NAME: swathithangaraj/building-on-ci
+      IMAGE_NAME: swathithangaraj/sample2
     docker:
       - image: 'docker:17.05.0-ce-git'
     steps:
