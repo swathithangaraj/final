@@ -19,7 +19,7 @@ spec:
 
     spec:
       containers:
-      - image: swathithangaraj/sample1:v1
+      - image: swathithangaraj/sample2:latest
         name: sample
         ports:
         - containerPort: 80
