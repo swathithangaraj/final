@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample
+  labels:
+    app: sample
+    namespace: demo
+  annotations:
+    monitoring: "true"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sample
+  template:
+    metadata:
+      labels:
+        app: sample
+
+    spec:
+      containers:
+      - image: swathithangaraj/sample1:v1
+        name: sample
+        ports:
+        - containerPort: 80
+
